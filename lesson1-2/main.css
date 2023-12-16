@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* звездочка значит применять ко всем элементам */
+
+.heading {
+    color: red;
+}
+
+.title {
+    background-color: chocolate;
+}
