@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+    /* 570 это половина контентной части */
+}
+
+.header {
+    height: 75px;
+    display: flex;
+    flex-shrink: 0;
+    background-color: #222;
+    align-items: center;
+}
+
+.logo_pic {
+    padding-right: 41px;
+}
+
+.search_pic {
+    margin-right: 859px;
+}
+
+.top {
+    height: 764px;
+    background-color: #F1E4E6;
+    stroke-width: 1px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    margin-left: -230px;
+}
+
+.man_picture {
+    height: 764px;
+    min-width: 800.58px;
+    margin-right: 63px;
+}
+
+.brand_name {
+    margin-top: 290px;
+    margin-bottom: 381px;
+    display: flex;
+}
+
+.brand_title {
+    display: flex;
+    flex-direction: column;
+    width: 377px;
+    height: 93px;
+}
+
+.pink_line {
+    margin-right: 16px;
+}
+
+.title {
+    color: #222;
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.subtitle {
+    color: #222;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.subtitle-color {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.top_menu {
+    display: grid;
+    margin-top: 65px;
+    gap: 30px;
+    grid-template-columns: repeat(3, 360px);
+    justify-content: center;
+}
+
+.menu_item1 {
+    width: 360px;
+    height: 260px;
+    background-image: url(img/for_women.svg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu_item2 {
+    width: 360px;
+    height: 260px;
+    background-image: url(img/for_men.svg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu_item3 {
+    width: 360px;
+    height: 260px;
+    background-image: url(img/for_kids.svg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu_item4 {
+    grid-column: span 3;
+    height: 260px;
+    background-image: url(img/accesories.svg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item_text {
+    text-align: center;
+}
+
+.desc_item {
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.name_item {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.featured_items {
+    margin-top: 96px;
+    margin-bottom: 60px;
+}
+
+.featured_title {
+    color: #222;
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.featured_describtion {
+    color: #9F9F9F;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.catalogue {
+    display: grid;
+    margin-top: 48px;
+    gap: 30px;
+    grid-template-columns: repeat(3, 360px);
+    margin-bottom: 48px;
+}
+
+.item_info {
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 24px;
+    flex-direction: column;
+    background-color: #F8F8F8;
+}
+
+.item_picture2 {
+    height: 420px;
+    width: 360px;
+    background-color: #F7E4E2;
+}
+
+.item_name {
+    color: #000;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 24px;
+    padding-left: 16px;
+}
+
+.item_desctibtion {
+    color: #5D5D5D;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-top: 16px;
+    padding-left: 16px;
+    max-width: 314px;
+}
+
+.price {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+.browse_button {
+    text-align: center;
+    display: block;
+    color: #F26376;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-color: #FF6A6A;
+    background-color: transparent;
+    padding: 15px 39px 14px 39px;
+    border-style: solid;
+    margin: 0 auto;
+    display: block;
+}

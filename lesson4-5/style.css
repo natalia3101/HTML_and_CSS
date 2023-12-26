@@ -12,8 +12,8 @@ body {
 }
 
 .center {
-    padding-left: calc(50% - 960px);
-    padding-right: calc(50% - 960px);
+    padding-left: calc(50% - 573px);
+    padding-right: calc(50% - 573px);
     /* 580 это половина контентной части */
 }
 
@@ -44,7 +44,7 @@ body {
     padding-bottom: 197px;
     justify-content: center;
     display: flex;
-    gap: 174px;
+    gap: 128px;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -105,7 +105,7 @@ body {
 .top_logo {
     display: flex;
     justify-content: center;
-    gap: 71.36px;
+    gap: 71px;
     flex-wrap: wrap;
 }
 
@@ -133,8 +133,6 @@ body {
 .block_item_big {
     border-radius: 10px;
     background: #132035;
-    width: 754px;
-    height: 808px;
     flex-shrink: 0;
     grid-column: span 2;
     grid-row: span 2;
@@ -167,7 +165,7 @@ body {
     font-weight: 700;
     line-height: 125%;
     /* 31.25px */
-    width: 694px;
+    /* width: 694px; */
     margin-top: 60px;
     margin-left: 30px;
     margin-right: 30px;
@@ -196,7 +194,7 @@ body {
     font-weight: 600;
     line-height: 160%;
     /* 25.6px */
-    width: 694px;
+    /* width: 694px; */
     margin-top: 60px;
     margin-left: 30px;
     margin-right: 30px;
@@ -219,4 +217,56 @@ body {
     margin-top: 30px;
     margin-left: 224px;
     margin-right: 224px;
+}
+
+@media (max-width:1024px) {
+    .center {
+        padding-left: calc(50% - 376px);
+        padding-right: calc(50% - 376px);
+    }
+    .subtitle {
+        font-size: 16px;
+    }
+    .title {
+        font-size: 48px;
+    }
+    .top {
+        padding-bottom: 120px;
+    }
+    .top_logo {
+        gap: 32px;
+        max-width: 650px;
+        margin: auto;
+    }
+    .block_content {
+        display: grid;
+        /* grid-auto-flow: dense; */
+        gap: 32px;
+        grid-template-columns: repeat(1, 362px);
+        justify-content: center;
+    }
+    .block_item_big {
+        width: 362px;
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .block_heading_big {
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .block_text_big {
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .block_img_big {
+        width: 98px;
+        height: 103px;
+        flex-shrink: 0;
+        margin-top: 30px;
+        margin-left: 132px;
+        margin-right: 132px;
+    }
 }
