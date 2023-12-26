@@ -14,7 +14,7 @@ body {
 .center {
     padding-left: calc(50% - 573px);
     padding-right: calc(50% - 573px);
-    /* 580 это половина контентной части */
+    /* 573 это половина контентной части */
 }
 
 .header {
@@ -103,6 +103,13 @@ body {
 }
 
 .top_logo {
+    display: flex;
+    justify-content: center;
+    gap: 71px;
+    flex-wrap: wrap;
+}
+
+.special_logo {
     display: flex;
     justify-content: center;
     gap: 71px;
@@ -223,6 +230,8 @@ body {
     .center {
         padding-left: calc(50% - 376px);
         padding-right: calc(50% - 376px);
+        /* тут есть зазоры с друх сторон по 8px
+        (768-16)/2 */
     }
     .subtitle {
         font-size: 16px;
@@ -268,5 +277,73 @@ body {
         margin-top: 30px;
         margin-left: 132px;
         margin-right: 132px;
+    }
+}
+
+@media (max-width:425px) {
+    .center {
+        padding-left: calc(50% - 187.5px);
+        padding-right: calc(50% - 187.5px);
+        /* 375/2 */
+    }
+    .header {
+        padding-top: 22.5px;
+        gap: 16px;
+    }
+    .header_link {
+        font-size: 14px;
+    }
+    .top_content {
+        padding-top: 64px;
+        padding-bottom: 128px;
+        justify-content: center;
+    }
+    .subtitle {
+        margin-bottom: 16px;
+        width: 343px;
+        text-align: center;
+    }
+    .title {
+        margin-bottom: 64px;
+        font-size: 28px;
+        width: 342px;
+        text-align: center;
+    }
+    .describtion_top {
+        width: 343px;
+        text-align: center;
+        color: grey;
+    }
+    .buttons {
+        margin-top: 39px;
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image_top {
+        width: 343px;
+        height: 344px;
+    }
+    .top_logo {
+        gap: 32px;
+    }
+    .special_logo {
+        justify-content: flex-start;
+        gap: 32px;
+        margin-left: 41.28px;
+    }
+    .top {
+        padding-bottom: 108px;
+    }
+    .block_content {
+        padding-top: 96px;
+        padding-bottom: 96px;
+        background-color: #020A18;
+        display: grid;
+        /* grid-auto-flow: dense; */
+        gap: 32px;
+        grid-template-columns: repeat(1, 362px);
+        justify-content: center;
     }
 }
