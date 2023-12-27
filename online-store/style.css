@@ -269,3 +269,93 @@ body {
     margin: 0 auto;
     display: block;
 }
+
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 369px);
+        padding-right: calc(50% - 369px);
+        /* тут есть зазоры с друх сторон по 8px
+        (770-32)/2. 16px зазоры с двух сторон */
+    }
+    .header {
+        height: 74px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .search_pic {
+        margin-right: 424px;
+    }
+    .logo_pic {
+        padding-left: 16px;
+    }
+    .top {
+        height: 368px;
+        margin-left: -16px;
+    }
+    .man_picture {
+        height: 368px;
+        min-width: 386px;
+        margin-right: 39px;
+    }
+    .brand_name {
+        margin-top: 138.1px;
+        margin-bottom: 151.47px;
+    }
+    .brand_title {
+        width: 283px;
+        height: 78px;
+    }
+    .title {
+        font-size: 44px;
+    }
+    .subtitle {
+        font-size: 24px;
+    }
+    .subtitle-color {
+        font-size: 24px;
+    }
+    .top_menu {
+        gap: 19px;
+        grid-template-columns: repeat(3, 231.973px);
+    }
+    .menu_item1 {
+        width: 231.973px;
+        height: 167.617px;
+    }
+    .menu_item2 {
+        width: 231.973px;
+        height: 167.617px;
+    }
+    .menu_item3 {
+        width: 231.973px;
+        height: 167.617px;
+    }
+    .menu_item4 {
+        height: 116px;
+    }
+    .featured_items {
+        margin-top: 109.92px;
+        margin-bottom: 70.52px;
+    }
+    .catalogue {
+        display: grid;
+        margin-top: 73px;
+        gap: 17px;
+        grid-template-columns: repeat(2, 360px);
+        margin-bottom: 32.5px;
+    }
+    .item_info {
+        padding-bottom: 20px;
+    }
+    .item_name {
+        padding-left: 18px;
+    }
+    .item_desctibtion {
+        padding-top: 12.65px;
+        padding-left: 16.5px;
+    }
+    .price {
+        padding-top: 18px;
+        padding-left: 18px;
+    }
+}
