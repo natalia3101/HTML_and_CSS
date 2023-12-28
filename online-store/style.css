@@ -33,6 +33,14 @@ body {
     margin-right: 859px;
 }
 
+.right_menu1 {
+    margin-right: 25px;
+}
+
+.right_menu2 {
+    margin-right: 25px;
+}
+
 .top {
     height: 764px;
     background-color: #F1E4E6;
@@ -357,5 +365,105 @@ body {
     .price {
         padding-top: 18px;
         padding-left: 18px;
+    }
+}
+
+@media (max-width:767px) {
+    .center {
+        padding-left: calc(50% - 204.5px);
+        padding-right: calc(50% - 204.5px);
+        /* тут есть зазоры с друх сторон по 8px
+        (424-16)/2. 8px зазоры с двух сторон */
+    }
+    .header {
+        height: 74px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .search_pic {
+        margin-right: 200px;
+    }
+    .top {
+        height: 363px;
+        margin: auto;
+        justify-content: center;
+    }
+    .right_menu2 {
+        display: none;
+    }
+    .right_menu3 {
+        display: none;
+    }
+    .man_picture {
+        display: none;
+    }
+    .brand_name {
+        align-items: center;
+    }
+    .brand_title {
+        width: 236px;
+        height: 66px;
+    }
+    .pink_line {
+        margin-right: 15px;
+    }
+    .title {
+        font-size: 38px;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+    .subtitle-color {
+        font-size: 20px;
+    }
+    .top_menu {
+        margin-top: 64px;
+        gap: 32px;
+        grid-template-columns: repeat(1, 343px);
+    }
+    .menu_item1 {
+        width: 343px;
+        height: 247px;
+    }
+    .menu_item2 {
+        width: 343px;
+        height: 247px;
+    }
+    .menu_item3 {
+        width: 343px;
+        height: 247px;
+    }
+    .menu_item4 {
+        grid-column: span 1;
+        width: 343px;
+        height: 111px;
+    }
+    .featured_items {
+        margin-top: 64px;
+        margin-bottom: 85px;
+    }
+    .featured_describtion {
+        margin-top: 3.3px;
+    }
+    .catalogue {
+        margin-top: 64.7px;
+        gap: 16.61px;
+        grid-template-columns: repeat(1, 360px);
+        margin-bottom: 40.61px;
+        justify-content: center;
+    }
+    .item_info {
+        padding-bottom: 19.9px;
+    }
+    .item_name {
+        padding-left: 18px;
+    }
+    .item_desctibtion {
+        padding-top: 12.62px;
+        padding-left: 16px;
+    }
+    .price {
+        padding-top: 17.95px;
+        padding-left: 18.36px;
     }
 }
