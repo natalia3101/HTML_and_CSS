@@ -1,0 +1,243 @@
+@keyframes wobble-hor-bottom {
+    0%,
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter Tight', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 580px);
+    padding-right: calc(50% - 580px);
+    /* 580 это половина контентной части */
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* 1. При наведении на любую ссылку цвет текста должен стать красным */
+
+.menu__link:hover {
+    color: red;
+}
+
+
+/* 2. При нажатии на ссылку цвет текста должен стать зеленым в момент нажатия */
+
+.menu__link:active {
+    color: green;
+}
+
+
+/* 3. Найти первый элемент списка и добавить нижнее подчеркивание ссылке */
+
+.menu__list:first-child .menu__link {
+    text-decoration: underline;
+}
+
+
+/* 4. Найти последний элемент списка и добавить ссылке жирность font-weight: bold */
+
+.menu__list:last-child .menu__link {
+    font-weight: bold;
+}
+
+
+/* 5. У третьей ссылки нужно поменять цвет фона на оранжевый */
+
+.menu__list:nth-child(3) .menu__link {
+    background-color: orange;
+}
+
+.product {
+    width: 250px;
+    padding: 24px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.product__img {
+    background-color: forestgreen;
+    height: 150px;
+}
+
+
+/* 2. Необходимо создать псевдоэлемент new */
+
+
+/* 3. Разместить его в правом верхнем углу блока product чтобы он не смещал другие элементы */
+
+
+/* 4. Размеры блока 35 на 35 px */
+
+
+/* 5. цвет фона красный, а цвет текста белый */
+
+.product_new::after {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    content: 'New';
+    background-color: red;
+    color: #ffffff;
+    width: 40px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 6. Необходимо создать псевдоэлемент sale */
+
+
+/* 7. Разместить его в левом верхнем углу блока product чтобы он не смещал другие элементы */
+
+
+/* 8. размеры блока 35 на 35 px */
+
+
+/* 9. цвет фона оранжевый, а цвет текста белый */
+
+.product_sale::before {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    content: 'Sale';
+    background-color: orange;
+    color: #ffffff;
+    width: 40px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Необходимо добавить эффект наведения на картинку и 
+поменять значение цвета на purple при наведении и yellow 
+при нажатии */
+
+.icon:hover path {
+    fill: purple;
+}
+
+.icon:active path {
+    fill: yellow;
+}
+
+.item {
+    width: 150px;
+    height: 86px;
+    background-color: forestgreen;
+    border: 1px solid #000;
+    transition: transform 1s;
+}
+
+
+/* d. Все наведения должны быть плавными и выполнять переход за 1 секунду */
+
+
+/* e. Можно менять параметры ширины и высоты при необходимости */
+
+
+/* a. При наведении на первый блок, чтобы он смещался на 50px вправо */
+
+.item_1:hover {
+    transform: translateX(50px);
+}
+
+
+/* b. при наведении на второй блок, он должен становиться в 2 раза больше */
+
+.item_2:hover {
+    transform: scale(2);
+}
+
+
+/* c. При наведении на 3 блок, он должен повернуться по часовой стрелке на 60 градусов */
+
+.item_3:hover {
+    transform: rotate(60deg);
+}
+
+
+/* 2. Есть 4 блока, вам необходимо сделать 8 угольник */
+
+.content2 {
+    margin-top: 200px;
+    margin-left: 200px;
+    position: relative;
+}
+
+.item2 {
+    position: absolute;
+    width: 150px;
+    height: 62px;
+    border: 1px solid #000;
+}
+
+.item__1 {
+    transform: rotate(45deg);
+}
+
+.item__2 {
+    transform: rotate(90deg);
+}
+
+.item__3 {
+    transform: rotate(135deg);
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+    background-color: purple;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-family: sans-serif;
+    font-size: 18px;
+    transition: all 0.3s;
+    animation: wobble-hor-bottom 0.8s both 3s;
+}
+
+
+/* Необходимо добавить произвольную анимацию на кнопку для этого можно
+использовать генератор или придумать анимацию самостоятельно
+https://animista.net/play/basic/rotate-scale , если необходимо быстро определиться
+https://animista.net/play/attention/wobble */
