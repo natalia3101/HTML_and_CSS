@@ -1,0 +1,27 @@
+.bg-color {
+    background-color: aqua !important;
+}
+
+.carousel-inner {
+    width: 500px;
+}
+
+.text-color {
+    color: purple;
+}
+
+.carousel {
+    background-color: grey;
+}
+
+.carousel-control-next-icon {
+    background-image: url(img/circle-chevron-right-solid.svg);
+}
+
+.carousel-control-prev-icon {
+    background-image: url(img/circle-chevron-left-solid.svg);
+}
+
+.carousel-inner {
+    margin: auto;
+}

@@ -1,0 +1,12 @@
+.text_color {
+    color: red;
+}
+
+.bg-color {
+    background-color: aqua;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}

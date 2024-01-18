@@ -146,6 +146,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    transition: 0.3s
+}
+
+.menu_item1:hover {
+    transform: scale(1.01);
 }
 
 .menu_item2 {
@@ -158,6 +163,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    transition: 0.3s
+}
+
+.menu_item2:hover {
+    transform: scale(1.01);
 }
 
 .menu_item3 {
@@ -170,6 +180,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    transition: 0.3s
+}
+
+.menu_item3:hover {
+    transform: scale(1.01);
 }
 
 .menu_item4 {
@@ -182,6 +197,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    transition: 0.3s
+}
+
+.menu_item4:hover {
+    transform: scale(1.01);
 }
 
 .item_text {
@@ -357,7 +377,7 @@ body {
     display: flex;
     flex-direction: row;
     background-color: #222224;
-    height: 341px;
+    padding-bottom: 104px;
     gap: 30px;
 }
 
@@ -475,6 +495,7 @@ body {
     height: 49px;
     border: none;
     padding-left: 22px;
+    padding-right: 22px;
     border-top-left-radius: 24px;
     border-bottom-left-radius: 24px;
     background-color: #e1e1e1;
@@ -634,7 +655,8 @@ body {
     .advantages {
         display: flex;
         flex-direction: column;
-        height: 610px;
+        padding-top: 48px;
+        padding-bottom: 64px;
         gap: 48.47px;
         justify-content: center;
     }
@@ -769,6 +791,7 @@ body {
     }
     .advantages {
         gap: 46px;
+        padding-bottom: 81px;
     }
     .adv_describtion {
         max-width: 347px;
@@ -812,9 +835,10 @@ body {
         margin-top: 43px;
     }
     .subscribe__mail {
-        width: 245px;
+        width: 205px;
         height: 46px;
         padding-left: 21px;
+        padding-right: 21px;
     }
     .subscribe__btn {
         width: 95px;
