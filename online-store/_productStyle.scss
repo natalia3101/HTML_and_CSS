@@ -1,0 +1,196 @@
+.product_menu {
+    background-color: #F8F3F4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #EAEAEA;
+    .product_menu_title {
+        color: #F16D7F;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .product_menu_list {
+        display: flex;
+        flex-direction: row;
+        .product_manu_box:last-child .product_menu_link {
+            font-weight: 700;
+            color: #F16D7F;
+        }
+        .product_manu_box:not(:last-child)::after {
+            content: '/';
+            padding-left: 8px;
+            padding-right: 8px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #636363;
+        }
+        .product_menu_link {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #636363;
+            transition: 0.3s;
+        }
+        .product_menu_link:hover {
+            color: #F16D7F;
+        }
+    }
+}
+
+.product_slides {
+    padding-top: 12px;
+    padding-bottom: 42px;
+    background-color: #F7F7F7;
+    border: 1px solid #EAEAEA;
+    height: 777px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    .slider_arrow {
+        background: rgba(42, 42, 42, 0.15);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 47px;
+        height: 47px;
+        position: absolute;
+        top: 365px;
+        transition: 0.3s;
+    }
+    .slider_arrow:hover path {
+        fill: #F16D7F;
+    }
+    .slider_arrow_left {
+        left: 0;
+    }
+    .slider_arrow_right {
+        right: 0;
+    }
+}
+
+.product_women_collection {
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+    max-width: 1140px;
+    margin: -65px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .product_women_collection_title {
+        color: #F16D7F;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 12px;
+    }
+    .product_women_collection_subtitle {
+        color: #4D4D4D;
+        font-family: Lato;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 48px;
+        margin-top: 12px;
+    }
+    .product_women_collection_desc {
+        color: #5E5E5E;
+        text-align: center;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin: auto;
+        margin-bottom: 32px;
+        max-width: 555px;
+    }
+    .product_women_collection_price {
+        color: #EF5B70;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 65px;
+    }
+    .product_women_collection_filters {
+        padding-top: 65px;
+        padding-bottom: 48px;
+        display: flex;
+        gap: 22px;
+    }
+    .filter_summery {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+    }
+    .filter_title {
+        color: #6F6E6E;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .product_women_collection_add {
+        border: #FF6A6A solid 1px;
+        width: 212px;
+        height: 48px;
+        color: #F26376;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        align-items: center;
+        justify-content: center;
+        gap: 22px;
+        display: flex;
+        transition: 0.3s;
+    }
+    .product_women_collection_add:hover {
+        background-color: #F16D7F;
+        color: #FFFFFF;
+    }
+    .product_women_collection_add:hover svg path {
+        fill: #FFFFFF;
+    }
+}
+
+.product_catalogue {
+    display: grid;
+    margin-top: 129px;
+    gap: 30px;
+    grid-template-columns: repeat(3, 360px);
+    margin-bottom: 128px;
+}

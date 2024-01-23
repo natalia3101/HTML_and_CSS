@@ -1,0 +1,66 @@
+@import 'vars';
+@import 'mixings';
+%flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    padding-left: calc(50% - $siteWidth / 2);
+    padding-right: calc(50% - $siteWidth / 2);
+}
+
+.header {
+    background-color: $backDarkBlock;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @extend %flex;
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+}
+
+.top_head_heading {
+    color: $colorSelectSite;
+}
+
+.breadcrumbs_link {
+    font-weight: 300;
+    color: grey;
+}
+
+.breadcrumbs_link_new {
+    color: $colorSelectSite;
+}
+
+.product {
+    width: $thirdSite;
+    display: flex;
+    flex-direction: column;
+    &_img {
+        width: 100%;
+    }
+    &_content {
+        background-color: #fff;
+        padding: 24px 16px;
+    }
+    &_name {
+        color: #222;
+    }
+}
+
+.product_box {
+    @include centerflex();
+}

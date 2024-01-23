@@ -1,0 +1,46 @@
+@import 'vars';
+@mixin centerflex() {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+%font {
+    font-family: sans-serif;
+    font-style: normal;
+}
+
+// наследование (% extend) - переменная в которую можно положить несколько параметров
+// commenting
+// миксин (smth(), include) - это как функция, в ней можно использовать переменные, мы его в разлых селекторах можем назначать разные параметры. внутри миксина можно менять параметры
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    &_heading_colour {
+        color: $textColor;
+    }
+}
+
+.nav {
+    display: flex;
+    gap: $gap;
+    &__link {
+        text-decoration: none;
+        @extend %font
+    }
+}
+
+.content {
+    display: flex;
+    gap: $gap;
+    &__item {
+        width: 25%;
+        height: 200px;
+        border: $border
+    }
+    @include centerflex();
+}
