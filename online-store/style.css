@@ -101,7 +101,8 @@ summary::-webkit-details-marker {
   flex-direction: column;
   align-items: center;
 }
-.product_women_collection .product_women_collection_title {
+
+.product_women_collection_title {
   color: #F16D7F;
   font-family: Lato;
   font-size: 14px;
@@ -110,7 +111,8 @@ summary::-webkit-details-marker {
   line-height: normal;
   margin-bottom: 12px;
 }
-.product_women_collection .product_women_collection_subtitle {
+
+.product_women_collection_subtitle {
   color: #4D4D4D;
   font-family: Lato;
   font-size: 18px;
@@ -120,7 +122,8 @@ summary::-webkit-details-marker {
   margin-bottom: 48px;
   margin-top: 12px;
 }
-.product_women_collection .product_women_collection_desc {
+
+.product_women_collection_desc {
   color: #5E5E5E;
   text-align: center;
   font-family: Lato;
@@ -132,7 +135,8 @@ summary::-webkit-details-marker {
   margin-bottom: 32px;
   max-width: 555px;
 }
-.product_women_collection .product_women_collection_price {
+
+.product_women_collection_price {
   color: #EF5B70;
   font-family: Lato;
   font-size: 24px;
@@ -141,21 +145,25 @@ summary::-webkit-details-marker {
   line-height: normal;
   margin-bottom: 65px;
 }
-.product_women_collection .product_women_collection_filters {
+
+.product_women_collection_filters {
   padding-top: 65px;
   padding-bottom: 48px;
   display: flex;
   gap: 22px;
 }
-.product_women_collection .filters {
+
+.filters {
   position: relative;
 }
-.product_women_collection .filter_summery {
+
+.filter_summery {
   display: flex;
   align-items: center;
   gap: 11px;
 }
-.product_women_collection .filter_title {
+
+.filter_title {
   color: #6F6E6E;
   font-family: Lato;
   font-size: 14px;
@@ -163,7 +171,8 @@ summary::-webkit-details-marker {
   font-weight: 400;
   line-height: normal;
 }
-.product_women_collection .filter_box {
+
+.filter_box {
   background: #FFF;
   box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
   padding: 7px 30px 11px 9px;
@@ -172,8 +181,10 @@ summary::-webkit-details-marker {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  z-index: 1;
 }
-.product_women_collection .filter_check {
+
+.filter_check {
   display: flex;
   gap: 9px;
   align-items: center;
@@ -183,7 +194,8 @@ summary::-webkit-details-marker {
   font-weight: 400;
   line-height: normal;
 }
-.product_women_collection .product_women_collection_add {
+
+.product_women_collection_add {
   border: #FF6A6A solid 1px;
   width: 212px;
   height: 48px;
@@ -199,11 +211,13 @@ summary::-webkit-details-marker {
   display: flex;
   transition: 0.3s;
 }
-.product_women_collection .product_women_collection_add:hover {
+
+.product_women_collection_add:hover {
   background-color: #F16D7F;
   color: #FFFFFF;
 }
-.product_women_collection .product_women_collection_add:hover svg path {
+
+.product_women_collection_add:hover svg path {
   fill: #FFFFFF;
 }
 
@@ -213,6 +227,134 @@ summary::-webkit-details-marker {
   gap: 30px;
   grid-template-columns: repeat(3, 360px);
   margin-bottom: 128px;
+}
+
+.filters_box {
+  padding-top: 51px;
+  padding-bottom: 64px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.filter_left {
+  position: relative;
+  width: 360px;
+}
+
+.filter_main {
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 1;
+  top: -13px;
+}
+
+.filter_main_summary {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+}
+
+.filter_main[open] {
+  background: #FFFFFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.filter_main[open] .filter_main_summary {
+  color: #F16D7F;
+}
+
+.filter_main[open] .filter_img path {
+  fill: #F16D7F;
+}
+
+.filter_category {
+  margin-top: 16px;
+}
+
+.filter_category_summary {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  padding: 8px 11px 11px;
+  border-left: 5px solid #F16D7F;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.filter__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.filter__link:hover {
+  color: #F16D7F;
+}
+
+.filter_positions {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+  gap: 11px;
+}
+
+.filters_additional {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 27px;
+  align-items: center;
+}
+
+.filter_box_price {
+  width: 134px;
+  padding-right: 11px;
+}
+
+.item_name:hover {
+  color: #F16D7F;
+}
+
+.catalogue.center.catalog {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.catalog_pages {
+  margin-top: 60px;
+  margin-bottom: 109px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+  border: solid 1px #EBEBEB;
+  border-radius: 5px;
+  justify-content: center;
+  width: 236px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.catalog_pages .page_number {
+  color: #C4C4C4;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.catalog_pages .page_number:hover {
+  color: #F16D7F;
 }
 
 * {
@@ -228,6 +370,11 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.box-content {
+  overflow: hidden;
+  position: relative;
+}
+
 .center {
   padding-left: calc(50% - 570px);
   padding-right: calc(50% - 570px);
@@ -235,17 +382,24 @@ body {
 }
 
 .header {
-  height: 75px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   background-color: #222;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo_pic {
-  padding-right: 41px;
   transition: 0.3s;
+}
+
+.left_side {
+  display: flex;
+  align-items: center;
+  gap: 41px;
 }
 
 .logo_pic:hover {
@@ -260,8 +414,13 @@ body {
   transform: scale(1.1);
 }
 
+.right_side {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
 .right_menu1 {
-  margin-right: 25px;
   transition: 0.3s;
 }
 
@@ -269,8 +428,74 @@ body {
   transform: scale(1.1);
 }
 
+.burger_checkbox {
+  position: absolute;
+  left: -9999999px;
+  visibility: hidden;
+}
+
+.burger_checkbox:checked ~ .burger_menu {
+  right: 0;
+}
+
+.burger_menu {
+  background: #FFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  width: 232px;
+  padding: 32px;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 1;
+  top: 82px;
+  right: -232px;
+  transition: right 0.3s;
+}
+
+.burger_menu_heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.burger_menu_box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.burger_menu_title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+}
+
+.burger_menu_list {
+  list-style-type: none;
+  padding-left: 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin-top: 12px;
+}
+
+.burger_menu_link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.burger_menu_link:hover {
+  color: #F16D7F;
+}
+
 .right_menu2 {
-  margin-right: 25px;
   transition: 0.3s;
 }
 
