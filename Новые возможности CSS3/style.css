@@ -1,0 +1,69 @@
+body {
+  font-family: "latoblack_italic";
+}
+
+.text {
+  width: 200px;
+  height: 200px;
+  text-shadow: 0px 0px 1px #000;
+  color: white;
+}
+
+.text2 {
+  color: white;
+  text-shadow: 0 -2px 2px #880F9E, 0 -2px 2px #880F9E, 0 2px 2px #880F9E, 0 2px 2px #880F9E, -2px 0 2px #880F9E, 2px 0 2px #880F9E, -2px 0 2px #880F9E, 2px 0 2px #880F9E, -1px -2px 2px #880F9E, 1px -2px 2px #880F9E, -1px 2px 2px #880F9E, 1px 2px 2px #880F9E, -2px -1px 2px #880F9E, 2px -1px 2px #880F9E, -2px 1px 2px #880F9E, 2px 1px 2px #880F9E, -2px -2px 2px #880F9E, 2px -2px 2px #880F9E, -2px 2px 2px #880F9E, 2px 2px 2px #880F9E, -2px -2px 2px #880F9E, 2px -2px 2px #880F9E, -2px 2px 2px #880F9E, 2px 2px 2px #880F9E;
+}
+
+.text3 {
+  color: white;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+}
+
+.box {
+  height: 250px;
+  width: 350px;
+  border: 1px solid black;
+  border-radius: 0 0 20px 20px;
+  border-top-left-radius: 40px;
+  border-left: none;
+}
+
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 75px 0 75px 150px;
+  border-color: transparent transparent transparent #5A48FF;
+  transform: rotate(0deg);
+}
+
+h1 {
+  height: 70px;
+  background-color: grey;
+}
+
+.parallax {
+  min-height: 900px;
+  background-image: url(vertical-shot-tower-bridge-st-uk.jpg);
+  background-attachment: fixed;
+}
+
+.header {
+  height: 50px;
+  background-color: darkblue;
+  top: 0;
+  position: sticky;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.item {
+  height: 200px;
+  background-color: purple;
+  -webkit-clip-path: circle(50px at 0 100px);
+          clip-path: circle(50px at 0 100px);
+}/*# sourceMappingURL=style.css.map */
