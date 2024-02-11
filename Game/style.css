@@ -1,0 +1,90 @@
+@keyframes duckFly-1 {
+  0% {
+    left: -200px;
+    top: 13vh;
+  }
+  50% {
+    left: 12vw;
+    top: 48vh;
+  }
+  100% {
+    left: 100vw;
+    top: 65vh;
+  }
+}
+@keyframes duckFly-2 {
+  0% {
+    left: -200px;
+    top: 11vh;
+  }
+  50% {
+    left: 20vw;
+    top: 55vh;
+  }
+  100% {
+    left: 100vw;
+    top: 9vh;
+  }
+}
+@keyframes duckFly-3 {
+  0% {
+    left: -200px;
+    top: 64vh;
+  }
+  50% {
+    left: 46vw;
+    top: 40vh;
+  }
+  100% {
+    left: 100vw;
+    top: 43vh;
+  }
+}
+body {
+  counter-reset: count;
+  height: 100vh;
+  margin: 0;
+  background-image: url(scale_2400.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.duck-check {
+  position: absolute;
+  visibility: hidden;
+  left: -999999px;
+}
+.duck-check:checked {
+  counter-increment: count;
+}
+.duck-check:checked ~ label {
+  display: none;
+}
+
+.counter-info {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.counter-info::before {
+  content: counter(count);
+}
+
+.duck {
+  position: absolute;
+  left: -200px;
+}
+.duck__img {
+  width: 200px;
+}
+.duck_1 {
+  animation: duckFly-1 5s ease-in 1s both;
+}
+.duck_2 {
+  animation: duckFly-2 5s ease-in 2s both;
+}
+.duck_3 {
+  animation: duckFly-3 5s ease-in 3s both;
+}/*# sourceMappingURL=style.css.map */
